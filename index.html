@@ -4,17 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Apoio Familiar PE/PB | Orientação e Suporte Familiar</title>
+  <title>Acolhimento Particular para Dependência Química em PE e PB | Apoio Familiar</title>
 
-  <meta name="description" content="Suporte inicial, acolhimento and orientação para famílias em Pernambuco e Paraíba. Atendimento discreto, responsável e focado em organização dos próximos passos." />
+  <meta name="description" content="Orientação inicial para famílias que buscam acolhimento particular para dependência química e alcoolismo em Pernambuco e Paraíba. Atendimento discreto, responsável e focado nos próximos passos." />
 
   <link rel="canonical" href="https://apoiofamiliarpepb.com.br/" />
 
   <link rel="icon" href="assets/img/logo-simbolo.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/img/logo-simbolo.png">
 
-  <meta property="og:title" content="Apoio Familiar PE/PB | Orientação e Suporte Familiar" />
-  <meta property="og:description" content="Direcionamento seguro, acolhimento e orientação inicial para famílias em PE e PB." />
+  <meta property="og:title" content="Apoio Familiar PE/PB | Acolhimento Particular e Orientação Familiar" />
+  <meta property="og:description" content="Orientação inicial para famílias que buscam acolhimento particular para dependência química e alcoolismo em PE e PB." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://apoiofamiliarpepb.com.br/" />
   <meta property="og:locale" content="pt_BR" />
@@ -22,7 +22,7 @@
   <meta property="og:image" content="https://apoiofamiliarpepb.com.br/assets/img/logo-apoio-familiar.png" />
   <meta name="twitter:image" content="https://apoiofamiliarpepb.com.br/assets/img/logo-apoio-familiar.png" />
 
-  <link rel="stylesheet" href="styles/style.css?v=9" />
+  <link rel="stylesheet" href="styles/style.css?v=10" />
 
   <style>
     section {
@@ -55,6 +55,20 @@
     .landing-note {
       font-size: 0.94rem;
       color: var(--texto-suave);
+    }
+
+    .important-note {
+      background: #fff8e6;
+      border: 1px solid #f1d28a;
+      border-radius: 10px;
+      padding: 14px 16px;
+      color: #6b4b00;
+      font-size: 0.94rem;
+      margin-top: 14px;
+    }
+
+    .important-note strong {
+      color: #4a3500;
     }
 
     .compact-grid {
@@ -144,6 +158,7 @@
       border-radius: 999px;
       font-weight: 800;
       box-shadow: 0 15px 30px rgba(0,0,0,.18);
+      text-decoration: none;
     }
 
     .privacy-link {
@@ -157,7 +172,6 @@
       display: block;
     }
 
-    /* ✅ NOVO: Bloco de confiança próximo ao CTA */
     .trust-note {
       display: flex;
       align-items: flex-start;
@@ -176,7 +190,6 @@
       margin-top: 2px;
     }
 
-    /* ✅ NOVO: Aviso LGPD no formulário */
     .lgpd-note {
       font-size: 0.82rem;
       color: var(--texto-suave);
@@ -188,7 +201,6 @@
       text-decoration: underline;
     }
 
-    /* ✅ NOVO: Seção de cidades atendidas */
     .cidades-lista {
       display: flex;
       flex-wrap: wrap;
@@ -203,6 +215,17 @@
       padding: 5px 14px;
       font-size: 0.88rem;
       color: var(--texto-suave);
+    }
+
+    select {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid var(--borda);
+      border-radius: 10px;
+      font-size: 1rem;
+      background: #fff;
+      color: inherit;
+      margin-top: 6px;
     }
 
     @media(max-width: 900px) {
@@ -248,13 +271,23 @@
     "@context": "https://schema.org",
     "@type": "ConsultingService",
     "name": "Apoio Familiar PE/PB",
-    "description": "Canal de orientação inicial, acolhimento familiar e suporte para organização de dúvidas em Pernambuco e Paraíba.",
+    "description": "Canal de orientação inicial para famílias que buscam acolhimento particular para dependência química e alcoolismo em Pernambuco e Paraíba.",
     "url": "https://apoiofamiliarpepb.com.br/",
     "telephone": "+558195870637",
     "areaServed": [
-      "Recife", "Olinda", "Caruaru", "Jaboatão dos Guararapes", "Paulista",
-      "Camaragibe", "Cabo de Santo Agostinho", "Petrolina", "Garanhuns",
-      "Pernambuco", "João Pessoa", "Campina Grande", "Paraíba"
+      "Recife",
+      "Olinda",
+      "Caruaru",
+      "Jaboatão dos Guararapes",
+      "Paulista",
+      "Camaragibe",
+      "Cabo de Santo Agostinho",
+      "Petrolina",
+      "Garanhuns",
+      "Pernambuco",
+      "João Pessoa",
+      "Campina Grande",
+      "Paraíba"
     ],
     "contactPoint": {
       "@type": "ContactPoint",
@@ -264,13 +297,13 @@
     },
     "knowsAbout": [
       "Orientação familiar",
-      "Acolhimento familiar",
-      "Organização de dúvidas",
-      "Suporte familiar",
-      "Direcionamento responsável",
-      "Transparência contratual",
+      "Acolhimento particular",
+      "Dependência química",
+      "Alcoolismo",
+      "Comunidade terapêutica",
       "Custos e responsabilidades",
       "Rotina e regras",
+      "Transparência contratual",
       "Atendimento inicial pelo WhatsApp"
     ]
   }
@@ -286,31 +319,31 @@
         "name": "O que é o Apoio Familiar PE/PB?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "É um canal de orientação inicial para famílias em Pernambuco e Paraíba. Ajudamos a organizar dúvidas sobre acolhimento, custos, contrato, regras, rotina e próximos passos, sem substituir serviços profissionais especializados ou atendimento de emergência."
+          "text": "É um canal de orientação inicial para famílias que buscam informações sobre acolhimento particular, custos, contrato, rotina, regras e próximos passos em casos de dependência química e alcoolismo."
         }
       },
       {
         "@type": "Question",
-        "name": "Como funciona o acolhimento familiar?",
+        "name": "A orientação pelo WhatsApp é gratuita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A família envia uma mensagem pelo WhatsApp, apresenta a situação de forma objetiva e recebe orientação inicial para organizar dúvidas, responsabilidades e próximos passos com mais segurança."
+          "text": "A orientação inicial pelo WhatsApp não tem custo. O acolhimento em comunidade terapêutica particular possui investimento mensal, que deve ser confirmado antes da decisão."
         }
       },
       {
         "@type": "Question",
-        "name": "Quais informações devo confirmar antes de decidir?",
+        "name": "O acolhimento é particular?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Antes de qualquer decisão, confirme valores, entrada, mensalidade, vencimento, regras internas, rotina, documentação, comunicação com a família e possíveis custos adicionais diretamente com a unidade responsável."
+          "text": "Sim. O atendimento apresentado neste canal é voltado para acolhimento particular e autossustentável. Para atendimento gratuito, a família deve procurar CAPS, CRAS, UBS, UPA ou Secretaria Municipal de Saúde."
         }
       },
       {
         "@type": "Question",
-        "name": "O atendimento é feito pelo WhatsApp?",
+        "name": "Como funciona o primeiro contato?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sim. O primeiro contato é feito pelo WhatsApp, de forma discreta e objetiva. A família não precisa ter tudo organizado para iniciar a conversa."
+          "text": "A família envia uma mensagem pelo WhatsApp com nome, cidade, tipo de situação, se busca atendimento particular ou gratuito e se há responsável familiar acompanhando o processo."
         }
       },
       {
@@ -338,7 +371,7 @@
         <a href="#como-funciona">Como funciona</a>
         <a href="#transparencia">Vagas</a>
         <a href="#faq">Dúvidas</a>
-        <a class="btn btn-primary nav-button" href="https://wa.me/558195870637?text=Ol%C3%A1%2C%20preciso%20de%20orienta%C3%A7%C3%A3o%20inicial.%20N%C3%A3o%20sei%20por%20onde%20come%C3%A7ar." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a class="btn btn-primary nav-button" href="https://wa.me/558195870637?text=Ol%C3%A1%2C%20preciso%20de%20informa%C3%A7%C3%B5es%20sobre%20acolhimento%20particular%20para%20depend%C3%AAncia%20qu%C3%ADmica%20ou%20alcoolismo.%20Quero%20entender%20valores%2C%20vagas%20e%20pr%C3%B3ximos%20passos." target="_blank" rel="noopener noreferrer">WhatsApp</a>
       </nav>
     </div>
   </header>
@@ -348,18 +381,27 @@
       <div class="container hero-grid">
         <div>
           <span class="eyebrow">PE · PB · Atendimento humano e discreto</span>
-          <h1>Buscando suporte para o acolhimento e reabilitação de um familiar em PE ou PB?</h1>
-          <p>Receba orientação imediata, humana e totalmente discreta sobre disponibilidade de vagas, estruturas de atendimento e o passo a passo seguro para o processo de internação.</p>
+
+          <h1>Seu familiar precisa de acolhimento particular para dependência química ou alcoolismo em PE ou PB?</h1>
+
+          <p>Receba orientação inicial, humana e discreta sobre vagas particulares, rotina, custos, contrato e próximos passos para acolhimento terapêutico em Pernambuco e Paraíba.</p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://wa.me/558195870637?text=Ol%C3%A1%2C%20preciso%20de%20orienta%C3%A7%C3%A3o%20inicial.%20N%C3%A3o%20sei%20por%20onde%20come%C3%A7ar." target="_blank" rel="noopener noreferrer">Consultar Vagas e Suporte via WhatsApp</a>
+            <a class="btn btn-primary" href="https://wa.me/558195870637?text=Ol%C3%A1%2C%20preciso%20de%20informa%C3%A7%C3%B5es%20sobre%20acolhimento%20particular%20para%20depend%C3%AAncia%20qu%C3%ADmica%20ou%20alcoolismo.%20Quero%20entender%20valores%2C%20vagas%20e%20pr%C3%B3ximos%20passos." target="_blank" rel="noopener noreferrer">Consultar Vagas Particulares pelo WhatsApp</a>
+
             <a class="btn btn-secondary" href="#como-funciona">Entender como funciona</a>
           </div>
 
           <p class="landing-note">Atendimento inicial com sigilo, acolhimento e orientação clara para ajudar sua família a dar o próximo passo com mais segurança.</p>
 
+          <p class="important-note">
+            <strong>Importante:</strong> a orientação inicial pelo WhatsApp não tem custo. O acolhimento em comunidade terapêutica particular possui investimento mensal. Para atendimento gratuito, procure CAPS, CRAS, UBS ou Secretaria de Saúde do seu município.
+          </p>
+
           <div class="trust-note">
-            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#1a5c3c" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#1a5c3c" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
             <span>Respondemos pelo WhatsApp geralmente em até 1 hora. Você não precisa ter tudo organizado — envie só o essencial.</span>
           </div>
         </div>
@@ -374,19 +416,20 @@
       <div class="container">
         <div class="section-title">
           <span>Estrutura e segurança</span>
-          <h2>Estrutura, Segurança e Suporte Contínuo</h2>
-          <p>Ajudamos você a encontrar o direcionamento correto e o ambiente ideal para quem você ama.</p>
+          <h2>Estrutura, segurança e suporte contínuo</h2>
+          <p>Ajudamos você a entender o direcionamento correto antes de tomar uma decisão importante sobre o tratamento.</p>
         </div>
 
         <div class="quick-box">
           <div>
             <ul>
-              <li><strong>Acolhimento Estruturado:</strong> Unidades parceiras com ambientes projetados para convivência segura, bem-estar e reabilitação social focada na evolução contínua.</li>
-              <li><strong>Equipe e Monitoramento:</strong> Suporte e monitoramento constante para garantir a integridade, o cuidado humanizado e a organização de todas as etapas do processo.</li>
-              <li><strong>Transparência para a Família:</strong> Orientação clara sobre regras de convivência, processos internos, fluxos de visitas e acompanhamento da evolução do acolhido.</li>
+              <li><strong>Acolhimento estruturado:</strong> orientação sobre unidades com rotina, convivência supervisionada e organização terapêutica.</li>
+              <li><strong>Equipe e monitoramento:</strong> informações sobre suporte, regras internas, acompanhamento e segurança durante o acolhimento.</li>
+              <li><strong>Transparência para a família:</strong> explicação clara sobre contrato, mensalidade, responsabilidades, visitas, comunicação e próximos passos.</li>
             </ul>
           </div>
-          <a class="btn btn-primary" href="https://wa.me/558195870637?text=Ol%C3%A1%2C%20preciso%20de%20orienta%C3%A7%C3%A3o%20inicial.%20N%C3%A3o%20sei%20por%20onde%20come%C3%A7ar." target="_blank" rel="noopener noreferrer">Consultar Vagas e Suporte via WhatsApp</a>
+
+          <a class="btn btn-primary" href="https://wa.me/558195870637?text=Ol%C3%A1%2C%20preciso%20de%20informa%C3%A7%C3%B5es%20sobre%20acolhimento%20particular%20para%20depend%C3%AAncia%20qu%C3%ADmica%20ou%20alcoolismo.%20Quero%20entender%20valores%2C%20vagas%20e%20pr%C3%B3ximos%20passos." target="_blank" rel="noopener noreferrer">Consultar Vagas Particulares</a>
         </div>
       </div>
     </section>
@@ -396,24 +439,26 @@
         <div class="section-title">
           <span>Como funciona</span>
           <h2>Orientação em 3 etapas</h2>
-          <p>Um fluxo simples para sair do desespero e organizar uma decisão mais segura.</p>
+          <p>Um fluxo simples para sair do desespero, organizar as informações e decidir com mais segurança.</p>
         </div>
 
         <div class="grid-3">
           <article class="soft-card">
             <div class="number">1</div>
             <h3>Primeiro contato</h3>
-            <p>Você chama no WhatsApp e envia apenas as informações essenciais. Sem formulários longos, sem burocracia.</p>
+            <p>Você chama no WhatsApp e informa se o apoio é para você ou para um familiar, a cidade e o tipo de situação.</p>
           </article>
+
           <article class="soft-card">
             <div class="number">2</div>
-            <h3>Entendimento da situação</h3>
-            <p>Entendemos cidade, urgência, relação familiar, contexto da situação e se há abertura para receber ajuda.</p>
+            <h3>Triagem inicial</h3>
+            <p>Entendemos se é caso de álcool, drogas ou ambos, se existe responsável familiar e se a busca é por atendimento particular.</p>
           </article>
+
           <article class="soft-card">
             <div class="number">3</div>
             <h3>Orientação e próximos passos</h3>
-            <p>Organizamos as dúvidas sobre custos, contrato, regras e possibilidades conforme o contexto familiar — sem pressão para decidir.</p>
+            <p>Organizamos dúvidas sobre vagas, valores, contrato, rotina, regras, documentação e possibilidades conforme o contexto familiar.</p>
           </article>
         </div>
       </div>
@@ -423,12 +468,14 @@
       <div class="container">
         <div class="section-title">
           <span>Acesso às vagas</span>
-          <h2>Como Funciona o Acesso às Vagas?</h2>
-          <p>Cada situação familiar é única. Por isso, o mapeamento e a escolha da unidade ideal dependem do perfil de atendimento necessário e do nível de suporte exigido para o caso.</p>
+          <h2>Como funciona o acesso às vagas particulares?</h2>
+          <p>Cada situação familiar é única. Por isso, a orientação depende do perfil da pessoa, da urgência, da aceitação de ajuda, da cidade e da estrutura necessária.</p>
         </div>
 
         <blockquote class="price-card">
-          <p>As condições, custos operacionais e mensalidades são customizados de acordo com as necessidades e a infraestrutura de cada unidade parceira na região de Pernambuco e Paraíba. Consulte nossa central para verificar o formato ideal para a sua realidade.</p>
+          <p>
+            O acolhimento particular possui custos operacionais e mensalidade. Os valores podem variar conforme estrutura, localização, equipe, rotina, necessidade do caso e o que está incluso. Antes de decidir, a família deve confirmar mensalidade, entrada, vencimento, contrato, regras de saída, documentação, medicamentos e possíveis custos adicionais.
+          </p>
         </blockquote>
       </div>
     </section>
@@ -438,7 +485,7 @@
         <div class="section-title">
           <span>Atendimento em PE e PB</span>
           <h2>Orientamos famílias em toda a região</h2>
-          <p>Atendemos pelo WhatsApp famílias de Pernambuco e Paraíba, incluindo a Região Metropolitana do Recife, o Agreste, o Sertão e o litoral. Não é necessário deslocamento — o primeiro contato é discreto e à distância.</p>
+          <p>Atendemos pelo WhatsApp famílias de Pernambuco e Paraíba, incluindo Região Metropolitana do Recife, Agreste, Sertão, litoral e cidades próximas. O primeiro contato é discreto e à distância.</p>
         </div>
 
         <div class="cidades-lista" aria-label="Cidades atendidas">
@@ -471,37 +518,42 @@
         <div class="faq">
           <details>
             <summary>O que é o Apoio Familiar PE/PB?</summary>
-            <p>Somos um canal de orientação inicial para famílias em Pernambuco e Paraíba. Não fazemos diagnóstico, não prescrevemos condutas, não prometemos resultado, não garantimos disponibilidade e não realizamos atendimento emergencial. Nossa função é ajudar famílias a organizarem dúvidas antes de tomarem uma decisão.</p>
+            <p>Somos um canal de orientação inicial para famílias em Pernambuco e Paraíba que buscam informações sobre acolhimento particular para dependência química e alcoolismo. Não fazemos diagnóstico, não prescrevemos condutas, não prometemos resultado e não substituímos atendimento profissional especializado ou serviço de emergência.</p>
+          </details>
+
+          <details>
+            <summary>A orientação pelo WhatsApp é gratuita?</summary>
+            <p>Sim. A orientação inicial pelo WhatsApp não tem custo. Porém, o acolhimento em comunidade terapêutica particular possui investimento mensal. Se você busca atendimento gratuito, procure CAPS, CRAS, UBS, UPA ou a Secretaria de Saúde do seu município.</p>
+          </details>
+
+          <details>
+            <summary>O acolhimento é particular?</summary>
+            <p>Sim. Este canal orienta principalmente famílias que buscam acolhimento particular e autossustentável. Os custos devem ser confirmados antes da decisão, junto com contrato, rotina, responsabilidades da família e possíveis despesas adicionais.</p>
           </details>
 
           <details>
             <summary>Meu familiar está em uma situação delicada. O que fazer primeiro?</summary>
-            <p>O primeiro passo é entender a situação com calma: contexto familiar, urgência, riscos imediatos, tentativas anteriores de ajuda e abertura para diálogo. Com essas informações, a família consegue organizar melhor as opções e as perguntas certas antes de decidir. Podemos ajudar a organizar essas dúvidas pelo WhatsApp.</p>
+            <p>O primeiro passo é entender a situação com calma: uso de álcool, drogas ou ambos, riscos imediatos, histórico de internações, tentativas anteriores de ajuda, aceitação de tratamento e presença de um familiar responsável. Podemos ajudar a organizar essas informações pelo WhatsApp.</p>
           </details>
 
           <details>
             <summary>Meu familiar não aceita ajuda. Como devo agir?</summary>
-            <p>Quando não há aceitação de ajuda, a situação exige cautela, responsabilidade e orientação especializada. Podemos ajudar a família a organizar dúvidas e perguntas importantes, mas não decidimos, não indicamos conduta profissional e não substituímos orientação jurídica ou serviço especializado.</p>
+            <p>Quando não há aceitação de ajuda, a situação exige cautela, responsabilidade e orientação especializada. Podemos ajudar a família a organizar dúvidas e próximos passos, mas não substituímos orientação médica, psicológica, jurídica ou serviços públicos de emergência.</p>
           </details>
 
           <details>
-            <summary>Existe suporte público em Recife e na Paraíba?</summary>
-            <p>Sim. Existem serviços públicos e especializados que podem orientar famílias em diferentes municípios. A disponibilidade varia conforme a cidade. Para localizar o serviço mais próximo, consulte a Secretaria Municipal de Saúde ou os canais oficiais da sua região.</p>
+            <summary>Existe suporte público em Recife, Pernambuco ou Paraíba?</summary>
+            <p>Sim. Existem serviços públicos e especializados em diferentes municípios, como CAPS, CAPS AD, UBS, CRAS, UPA e Secretaria Municipal de Saúde. A disponibilidade varia conforme a cidade. Para atendimento gratuito, procure os canais oficiais da sua região.</p>
           </details>
 
           <details>
             <summary>Como comparar diferentes instituições antes de decidir?</summary>
-            <p>Cada instituição possui estrutura, equipe, rotina, regras e custos próprios. Antes de decidir, a família deve confirmar documentação, contrato, responsabilidades, comunicação, rotina, valores e possíveis custos adicionais diretamente com a unidade responsável.</p>
-          </details>
-
-          <details>
-            <summary>Quais custos a família deve confirmar em PE ou PB?</summary>
-            <p>Os valores variam conforme estrutura, equipe, localização e o que está incluso. É essencial confirmar diretamente com cada instituição antes de assinar qualquer contrato: entrada, mensalidade, vencimento, regras de saída, responsabilidades da família e possíveis cobranças extras. Orientamos as perguntas certas para fazer nessa conversa.</p>
+            <p>Antes de decidir, a família deve confirmar estrutura, equipe, rotina, regras internas, contrato, documentação, valores, vencimentos, visitas, comunicação com a família, responsabilidades e custos adicionais. A decisão precisa ser feita com clareza, sem pressão e com segurança.</p>
           </details>
 
           <details>
             <summary>Vocês atendem famílias de Recife, Caruaru, João Pessoa e outras cidades?</summary>
-            <p>Sim. Orientamos famílias de toda a Região Metropolitana do Recife — incluindo Olinda, Jaboatão dos Guararapes, Paulista, Caruaru e Cabo de Santo Agostinho — e do interior de Pernambuco e da Paraíba, incluindo João Pessoa e Campina Grande. O primeiro contato é feito pelo WhatsApp, de forma discreta, sem necessidade de deslocamento.</p>
+            <p>Sim. Orientamos famílias da Região Metropolitana do Recife, Olinda, Jaboatão dos Guararapes, Paulista, Caruaru, Cabo de Santo Agostinho, cidades do interior de Pernambuco, João Pessoa, Campina Grande e outras regiões da Paraíba.</p>
           </details>
         </div>
       </div>
@@ -512,16 +564,63 @@
         <div class="final-box">
           <div class="section-title">
             <span>Contato</span>
-            <h2>Não enfrente essa situação sozinho. Nós sabemos por onde começar.</h2>
-            <p>Clique no botão abaixo para falar agora mesmo com a nossa central de atendimento e triagem. Nosso papel é simplificar os processos e te dar uma resposta imediata.</p>
+            <h2>Fale com a central de triagem pelo WhatsApp</h2>
+            <p>Preencha as informações abaixo para abrir o WhatsApp com uma mensagem organizada. Isso ajuda a entender melhor a situação e evita perda de tempo no primeiro atendimento.</p>
           </div>
 
           <form id="leadForm">
-            <label>Nome<input type="text" id="nome" placeholder="Seu nome" required /></label>
-            <label>Cidade/Estado<input type="text" id="cidade" placeholder="Ex: Recife/PE" required /></label>
-            <label>Mensagem<textarea id="mensagem" rows="4" placeholder="Conte brevemente o que você precisa entender antes de decidir." required></textarea></label>
+            <label>Nome
+              <input type="text" id="nome" placeholder="Seu nome" required />
+            </label>
+
+            <label>Cidade/Estado
+              <input type="text" id="cidade" placeholder="Ex: Recife/PE" required />
+            </label>
+
+            <label>O apoio é para quem?
+              <select id="tipoApoio" required>
+                <option value="">Selecione</option>
+                <option value="Para mim">Para mim</option>
+                <option value="Para familiar">Para familiar</option>
+                <option value="Para outra pessoa">Para outra pessoa</option>
+              </select>
+            </label>
+
+            <label>Qual é a situação principal?
+              <select id="situacao" required>
+                <option value="">Selecione</option>
+                <option value="Álcool">Álcool</option>
+                <option value="Drogas">Drogas</option>
+                <option value="Álcool e drogas">Álcool e drogas</option>
+                <option value="Ainda não sei informar">Ainda não sei informar</option>
+              </select>
+            </label>
+
+            <label>Você busca qual tipo de atendimento?
+              <select id="tipoAtendimento" required>
+                <option value="">Selecione</option>
+                <option value="Particular">Particular</option>
+                <option value="Gratuito/SUS">Gratuito/SUS</option>
+                <option value="Ainda não sei">Ainda não sei</option>
+              </select>
+            </label>
+
+            <label>Existe familiar ou responsável acompanhando?
+              <select id="responsavel" required>
+                <option value="">Selecione</option>
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+                <option value="Ainda vou conversar com a família">Ainda vou conversar com a família</option>
+              </select>
+            </label>
+
+            <label>Mensagem
+              <textarea id="mensagem" rows="4" placeholder="Conte brevemente o que está acontecendo." required></textarea>
+            </label>
+
             <button class="btn btn-primary form-button" type="submit">Falar com a Central de Triagem Agora</button>
-            <p class="lgpd-note">Ao enviar, você concorda com nossa <a href="privacidade.html">Política de Privacidade</a>. Seus dados são usados apenas para orientação e não são compartilhados com terceiros.</p>
+
+            <p class="lgpd-note">Ao enviar, você concorda com nossa <a href="privacidade.html">Política de Privacidade</a>. Seus dados são usados apenas para orientação inicial.</p>
             <p class="form-feedback" id="formFeedback" role="status"></p>
           </form>
         </div>
@@ -529,17 +628,21 @@
     </section>
   </main>
 
-  <a class="floating-whatsapp" href="https://wa.me/558195870637?text=Ol%C3%A1%2C%20preciso%20de%20orienta%C3%A7%C3%A3o%20inicial.%20N%C3%A3o%20sei%20por%20onde%20come%C3%A7ar." target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp">WhatsApp</a>
+  <a class="floating-whatsapp" href="https://wa.me/558195870637?text=Ol%C3%A1%2C%20preciso%20de%20informa%C3%A7%C3%B5es%20sobre%20acolhimento%20particular%20para%20depend%C3%AAncia%20qu%C3%ADmica%20ou%20alcoolismo.%20Quero%20entender%20valores%2C%20vagas%20e%20pr%C3%B3ximos%20passos." target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp">WhatsApp</a>
 
   <footer>
     <div class="container footer-content">
       <div>
         <strong>Apoio Familiar PE/PB</strong>
-        <p>Orientação inicial para famílias em Pernambuco e Paraíba — transparência contratual e direcionamento responsável.</p>
-        <p><a class="privacy-link" href="privacidade.html">Política de Privacidade</a> · <a href="https://wa.me/558195870637?text=Ol%C3%A1%2C%20ainda%20tenho%20d%C3%BAdvidas%20e%20quero%20orienta%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
+        <p>Orientação inicial para famílias em Pernambuco e Paraíba que buscam acolhimento particular, transparência contratual e direcionamento responsável.</p>
+        <p>
+          <a class="privacy-link" href="privacidade.html">Política de Privacidade</a>
+          ·
+          <a href="https://wa.me/558195870637?text=Ol%C3%A1%2C%20ainda%20tenho%20d%C3%BAvidas%20sobre%20acolhimento%20particular%20e%20quero%20orienta%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </p>
       </div>
 
-      <p>Este canal não substitui atendimento profissional especializado, orientação jurídica ou atendimento de emergência. Em risco imediato, procure <strong>SAMU 192</strong>, UPA, hospital ou serviço especializado.</p>
+      <p>Este canal não substitui atendimento profissional especializado, orientação médica, orientação jurídica ou atendimento de emergência. Em risco imediato, procure <strong>SAMU 192</strong>, UPA, hospital, CAPS, CAPS AD ou serviço especializado da sua cidade.</p>
     </div>
   </footer>
 
@@ -551,17 +654,33 @@
       event.preventDefault();
 
       const nome = document.querySelector('#nome').value.trim();
-      const city = document.querySelector('#cidade').value.trim();
-      const message = document.querySelector('#mensagem').value.trim();
+      const cidade = document.querySelector('#cidade').value.trim();
+      const tipoApoio = document.querySelector('#tipoApoio').value;
+      const situacao = document.querySelector('#situacao').value;
+      const tipoAtendimento = document.querySelector('#tipoAtendimento').value;
+      const responsavel = document.querySelector('#responsavel').value;
+      const mensagem = document.querySelector('#mensagem').value.trim();
 
-      if (!nome || !city || !message) {
-        feedback.textContent = 'Preencha nome, cidade/estado e mensagem.';
+      if (!nome || !cidade || !tipoApoio || !situacao || !tipoAtendimento || !responsavel || !mensagem) {
+        feedback.textContent = 'Preencha todos os campos para continuar.';
         return;
       }
 
-      const text = `Olá, gostaria de receber orientação pelo WhatsApp.%0A%0ANome: ${encodeURIComponent(nome)}%0ACidade/Estado: ${encodeURIComponent(city)}%0AMensagem: ${encodeURIComponent(message)}`;
+      const rawText =
+`Olá, gostaria de receber orientação sobre acolhimento.
+
+Nome: ${nome}
+Cidade/Estado: ${cidade}
+Apoio: ${tipoApoio}
+Situação principal: ${situacao}
+Tipo de atendimento buscado: ${tipoAtendimento}
+Tem responsável acompanhando: ${responsavel}
+Mensagem: ${mensagem}`;
+
+      const text = encodeURIComponent(rawText);
 
       window.open(`https://wa.me/558195870637?text=${text}`, '_blank', 'noopener,noreferrer');
+
       feedback.textContent = 'Perfeito. O WhatsApp foi aberto com a mensagem pronta.';
       leadForm.reset();
     });
