@@ -4,10 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- ================================================================= -->
-  <!-- CORREÇÃO 1: INSTALAÇÃO DA GOOGLE TAG (Abaixo da abertura do head)  -->
-  <!-- ================================================================= -->
-  <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) Global -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18151845982"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -16,7 +13,6 @@
 
     gtag('config', 'AW-18151845982');
   </script>
-  <!-- ================================================================= -->
 
   <title>Acolhimento Privado e Suporte Familiar em PE e PB | Apoio Familiar</title>
 
@@ -328,7 +324,7 @@
         "name": "A orientação pelo WhatsApp é gratuita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A orientação inicial pelo WhatsApp não tem custo. O acolhimento em espaço privado possui investimento mensal, que deve ser confirmed antes da decisão."
+          "text": "A orientação inicial pelo WhatsApp não tem custo. O acolhimento em espaço privado possui investimento mensal, que deve ser verificado antes da decisão."
         }
       },
       {
@@ -403,7 +399,7 @@
             <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#1a5c3c" stroke-width="2" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M8 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
-            <span>Respondemos pelo WhatsApp geralmente in até 1 hora. Você não precisa ter tudo organizado — envie só o essencial.</span>
+            <span>Respondemos pelo WhatsApp geralmente em até 1 hora. Você não precisa ter tudo organizado — envie só o essencial.</span>
           </div>
         </div>
 
@@ -424,7 +420,7 @@
         <div class="quick-box">
           <div>
             <ul>
-              <li><strong>Acolhimento estruturado:</strong> orientação sobre unidades com rotina, convivência supervisionada e organização de suporte.</li>
+              <li><strong>Acolhimento estruturado:</strong> orientação sobre unidades com rotina, convivência supervisionada e organization de suporte.</li>
               <li><strong>Equipe e monitoramento:</strong> informações sobre suporte, regras internas, acompanhamento e segurança durante o acolhimento.</li>
               <li><strong>Transparência para a família:</strong> explicação clara sobre contrato, mensalidade, responsabilidades, visitas, comunicação e próximos passos.</li>
             </ul>
@@ -587,9 +583,6 @@
               </select>
             </label>
 
-            <!-- ================================================================= -->
-            <!-- CORREÇÃO 2: VALORES DOS SELECTS ALTERADOS PARA EVITAR BLOQUEIOS    -->
-            <!-- ================================================================= -->
             <label>Qual é o tipo de suporte buscado?
               <select id="situacao" required>
                 <option value="">Selecione</option>
@@ -598,7 +591,6 @@
                 <option value="Ainda não sei informar">Ainda não sei informar</option>
               </select>
             </label>
-            <!-- ================================================================= -->
 
             <label>Você busca qual tipo de atendimento?
               <select id="tipoAtendimento" required>
@@ -668,6 +660,13 @@
       if (!nome || !city || !tipoApoio || !situacao || !tipoAtendimento || !responsavel || !mensagem) {
         feedback.textContent = 'Preencha todos os campos para continuar.';
         return;
+      }
+
+      // Disparo do Snippet de Evento de Conversão (WhatsApp)
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18151845982/7IKCCLe378EcEN7qvM2D'
+        });
       }
 
       const rawText =
