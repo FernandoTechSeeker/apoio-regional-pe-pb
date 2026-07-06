@@ -4,6 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- ================================================================= -->
+  <!-- CORREÇÃO 1: INSTALAÇÃO DA GOOGLE TAG (Abaixo da abertura do head)  -->
+  <!-- ================================================================= -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18151845982"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18151845982');
+  </script>
+  <!-- ================================================================= -->
+
   <title>Acolhimento Privado e Suporte Familiar em PE e PB | Apoio Familiar</title>
 
   <meta name="description" content="Orientação inicial para famílias que buscam acolhimento privado e suporte familiar em Pernambuco e Paraíba. Atendimento discreto e responsável." />
@@ -314,7 +328,7 @@
         "name": "A orientação pelo WhatsApp é gratuita?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A orientação inicial pelo WhatsApp não tem custo. O acolhimento em espaço privado possui investimento mensal, que deve ser confirmado antes da decisão."
+          "text": "A orientação inicial pelo WhatsApp não tem custo. O acolhimento em espaço privado possui investimento mensal, que deve ser confirmed antes da decisão."
         }
       },
       {
@@ -389,7 +403,7 @@
             <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#1a5c3c" stroke-width="2" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M8 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
-            <span>Respondemos pelo WhatsApp geralmente em até 1 hora. Você não precisa ter tudo organizado — envie só o essencial.</span>
+            <span>Respondemos pelo WhatsApp geralmente in até 1 hora. Você não precisa ter tudo organizado — envie só o essencial.</span>
           </div>
         </div>
 
@@ -573,14 +587,18 @@
               </select>
             </label>
 
+            <!-- ================================================================= -->
+            <!-- CORREÇÃO 2: VALORES DOS SELECTS ALTERADOS PARA EVITAR BLOQUEIOS    -->
+            <!-- ================================================================= -->
             <label>Qual é o tipo de suporte buscado?
               <select id="situacao" required>
                 <option value="">Selecione</option>
-                <option value="Suporte Tipo 1">Suporte Familiar Geral</option>
-                <option value="Suporte Tipo 2">Acolhimento de Urgência</option>
+                <option value="Suporte Familiar Geral">Suporte Familiar Geral</option>
+                <option value="Acolhimento Estruturado">Acolhimento Estruturado</option>
                 <option value="Ainda não sei informar">Ainda não sei informar</option>
               </select>
             </label>
+            <!-- ================================================================= -->
 
             <label>Você busca qual tipo de atendimento?
               <select id="tipoAtendimento" required>
@@ -640,14 +658,14 @@
       event.preventDefault();
 
       const nome = document.querySelector('#nome').value.trim();
-      const cidade = document.querySelector('#cidade').value.trim();
+      const city = document.querySelector('#cidade').value.trim();
       const tipoApoio = document.querySelector('#tipoApoio').value;
       const situacao = document.querySelector('#situacao').value;
       const tipoAtendimento = document.querySelector('#tipoAtendimento').value;
       const responsavel = document.querySelector('#responsavel').value;
       const mensagem = document.querySelector('#mensagem').value.trim();
 
-      if (!nome || !cidade || !tipoApoio || !situacao || !tipoAtendimento || !responsavel || !mensagem) {
+      if (!nome || !city || !tipoApoio || !situacao || !tipoAtendimento || !responsavel || !mensagem) {
         feedback.textContent = 'Preencha todos os campos para continuar.';
         return;
       }
@@ -656,7 +674,7 @@
 `Olá, gostaria de receber orientação sobre acolhimento privado.
 
 Nome: ${nome}
-Cidade/Estado: ${cidade}
+Cidade/Estado: ${city}
 Apoio: ${tipoApoio}
 Tipo de suporte: ${situacao}
 Tipo de atendimento buscado: ${tipoAtendimento}
