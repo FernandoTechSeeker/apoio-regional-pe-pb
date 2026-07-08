@@ -420,7 +420,7 @@
         <div class="quick-box">
           <div>
             <ul>
-              <li><strong>Acolhimento estruturado:</strong> orientação sobre unidades com rotina, convivência supervisionada e organization de suporte.</li>
+              <li><strong>Acolhimento estruturado:</strong> orientação sobre unidades com rotina, convivência supervisionada e organização de suporte.</li>
               <li><strong>Equipe e monitoramento:</strong> informações sobre suporte, regras internas, acompanhamento e segurança durante o acolhimento.</li>
               <li><strong>Transparência para a família:</strong> explicação clara sobre contrato, mensalidade, responsabilidades, visitas, comunicação e próximos passos.</li>
             </ul>
@@ -662,7 +662,7 @@
         return;
       }
 
-      // Disparo do Snippet de Evento de Conversão (WhatsApp)
+      // Conversão do envio do formulário
       if (typeof gtag === 'function') {
         gtag('event', 'conversion', {
           'send_to': 'AW-18151845982/7IKCCLe378EcEN7qvM2D'
@@ -687,6 +687,39 @@ Mensagem: ${mensagem}`;
       feedback.textContent = 'Perfeito. O WhatsApp foi aberto com a mensagem pronta.';
       leadForm.reset();
     });
+  </script>
+
+  <script>
+    // Conversão dos botões de WhatsApp
+    (function () {
+      const whatsappConversionId = 'AW-18151845982/7IKCCLa578EcEN7gvM9D';
+
+      function enviarConversaoWhatsApp() {
+        if (typeof gtag === 'function') {
+          gtag('event', 'conversion', {
+            'send_to': whatsappConversionId
+          });
+        }
+      }
+
+      function ativarCliquesWhatsApp() {
+        const linksWhatsApp = document.querySelectorAll(
+          'a[href*="wa.me"], a[href*="api.whatsapp.com"], a[href*="whatsapp.com/send"]'
+        );
+
+        linksWhatsApp.forEach(function (link) {
+          link.addEventListener('click', function () {
+            enviarConversaoWhatsApp();
+          });
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', ativarCliquesWhatsApp);
+      } else {
+        ativarCliquesWhatsApp();
+      }
+    })();
   </script>
 </body>
 </html>
